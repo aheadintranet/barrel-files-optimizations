@@ -18,8 +18,6 @@ In the tsconfig.json file, there are 2 module aliases defined:
 - `@components` that points to `./src/components`, which uses the barrel file;
 - `@components/*` that points to `./src/components/*`;
 
----
-
 There are 4 simple pages defined, each of which just renders one of the mentioned components:
 
 - `/` renders `<Small />`;
@@ -29,6 +27,8 @@ There are 4 simple pages defined, each of which just renders one of the mentione
 
 The components are imported from the module alias that points to the barrel file, e.g. `import { Small } from "@components"`.
 
+---
+
 ## Default behavior
 
 According to `next-statoscope`, building the application without any configuration lead to the bundling of all the components together:
@@ -37,7 +37,9 @@ According to `next-statoscope`, building the application without any configurati
 
 The index page uses only the `<Small />` component but the barrel file takes all of them in the chunk.
 
-Using `modularizeImports`
+---
+
+## Using `modularizeImports`
 
 Adding the following configuration to the `next.config.js` we can instruct the bundler on how to resolve our own exports:
 
