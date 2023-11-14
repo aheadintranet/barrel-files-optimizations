@@ -35,7 +35,7 @@ According to `next-statoscope`, building the application without any configurati
 
 ![default-build](./public/default-build.jpg)
 
-## Using `modularizeImports`
+## Using modularizeImports
 
 Adding the following configuration to the `next.config.js` we can instruct the bundler on how to resolve our own exports:
 
