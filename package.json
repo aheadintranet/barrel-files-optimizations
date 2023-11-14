@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.2"
+    "next": "13.5.3"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -19,6 +19,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.2"
+    "eslint-config-next": "14.0.2",
+    "next-statoscope": "1.0.1"
   }
 }
