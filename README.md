@@ -31,11 +31,13 @@ The components are imported from the module alias that points to the barrel file
 
 ## Default behavior
 
-According to `next-statoscope`, building the application without any configuration lead to the bundling of all the components together even for the index, which uses only the `<Small />` one:
+According to `next-statoscope`, building the application without any configuration lead to the bundling of all the components together:
 
 ![default-build](./public/default-build.jpg)
 
-## Using modularizeImports
+The index page uses only the `<Small />` component but the barrel file takes all of them in the chunk.
+
+## Using `modularizeImports`
 
 Adding the following configuration to the `next.config.js` we can instruct the bundler on how to resolve our own exports:
 
