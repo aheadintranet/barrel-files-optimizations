@@ -37,7 +37,7 @@ According to `next-statoscope`, building the application without any configurati
 
 The index page uses only the `<Small />` component but the barrel file takes all of them in the chunk.
 
-## Using `modularizeImports`
+Using `modularizeImports`
 
 Adding the following configuration to the `next.config.js` we can instruct the bundler on how to resolve our own exports:
 
